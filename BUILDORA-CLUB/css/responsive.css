@@ -1,0 +1,199 @@
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width:1024px){
+
+section{
+padding:80px 6%;
+}
+
+nav{
+padding:20px 6%;
+}
+
+.hero{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero-right{
+margin-top:40px;
+}
+
+.skill-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.comparison-box{
+
+grid-template-columns:1fr;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ==========================
+   MOBILE DEVICES
+========================== */
+
+@media (max-width:768px){
+
+nav{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+
+gap:15px;
+
+}
+
+.hero{
+
+padding-top:280px;
+
+}
+
+.hero h1{
+
+font-size:2.5rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+}
+
+.skills h2,
+.comparison h2,
+.why-us h2,
+.journey h2,
+.cta h2{
+
+font-size:2.2rem;
+
+}
+
+.skill-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-links{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+width:220px;
+
+}
+
+}
+
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+.hero h1{
+
+font-size:2rem;
+line-height:1.2;
+
+}
+
+.hero-tag{
+
+font-size:.8rem;
+
+}
+
+.section-subtitle{
+
+font-size:.95rem;
+
+}
+
+.skill-card,
+.why-card,
+.step{
+
+padding:25px;
+
+}
+
+.buildora-side,
+.other-side{
+
+padding:25px;
+
+}
+
+.footer-logo{
+
+font-size:1.5rem;
+
+}
+
+.copyright{
+
+font-size:.8rem;
+
+}
+
+}

@@ -1,0 +1,372 @@
+/* =========================
+BUILDORA ANIMATIONS
+========================= */
+
+/* Fade Up */
+
+.fade-up{
+opacity:0;
+transform:translateY(50px);
+animation:fadeUp 1s forwards;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Fade Left */
+
+.fade-left{
+opacity:0;
+transform:translateX(-60px);
+animation:fadeLeft 1s forwards;
+}
+
+@keyframes fadeLeft{
+
+from{
+opacity:0;
+transform:translateX(-60px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/* Fade Right */
+
+.fade-right{
+opacity:0;
+transform:translateX(60px);
+animation:fadeRight 1s forwards;
+}
+
+@keyframes fadeRight{
+
+from{
+opacity:0;
+transform:translateX(60px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/* Zoom In */
+
+.zoom-in{
+opacity:0;
+transform:scale(.8);
+animation:zoomIn 1s forwards;
+}
+
+@keyframes zoomIn{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/* Hero Glow */
+
+.hero h1{
+
+animation:glowText 3s infinite alternate;
+
+}
+
+@keyframes glowText{
+
+from{
+
+text-shadow:
+0 0 10px rgba(0,229,255,.3);
+
+}
+
+to{
+
+text-shadow:
+0 0 20px rgba(0,229,255,.7),
+0 0 40px rgba(0,229,255,.4);
+
+}
+
+}
+
+/* Card Hover Glow */
+
+.offer-card,
+.mentor-card,
+.why-card,
+.timeline-item,
+.testimonial-card{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.offer-card::before,
+.mentor-card::before,
+.why-card::before,
+.timeline-item::before,
+.testimonial-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+left:-100%;
+
+width:200%;
+height:200%;
+
+background:
+linear-gradient(
+45deg,
+transparent,
+rgba(0,229,255,.08),
+transparent
+);
+
+transform:rotate(25deg);
+
+transition:.8s;
+
+}
+
+.offer-card:hover::before,
+.mentor-card:hover::before,
+.why-card:hover::before,
+.timeline-item:hover::before,
+.testimonial-card:hover::before{
+
+top:100%;
+left:100%;
+
+}
+
+/* Button Glow */
+
+.primary-btn{
+
+transition:.4s;
+
+}
+
+.primary-btn:hover{
+
+box-shadow:
+0 0 20px rgba(0,229,255,.6),
+0 0 40px rgba(0,229,255,.3);
+
+transform:translateY(-4px);
+
+}
+
+/* Floating Effect */
+
+.hero-right img{
+
+animation:floating 5s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Pulse */
+
+.pulse{
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* Marquee Glow */
+
+.track{
+
+text-shadow:
+0 0 10px rgba(0,229,255,.5);
+
+}
+
+/* Footer Social Hover */
+
+.socials a{
+
+transition:.3s;
+
+}
+
+.socials a:hover{
+
+transform:translateY(-5px) scale(1.1);
+
+}
+
+/* Page Entrance */
+
+body{
+
+animation:pageLoad .8s ease;
+
+}
+
+@keyframes pageLoad{
+
+from{
+
+opacity:0;
+transform:translateY(15px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* CTA Animation */
+
+.cta{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.cta::before{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+height:300px;
+
+background:
+radial-gradient(
+circle,
+rgba(0,229,255,.15),
+transparent
+);
+
+top:-100px;
+right:-100px;
+
+animation:moveGlow 6s infinite linear;
+
+}
+
+@keyframes moveGlow{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* Mentor Image Glow */
+
+.mentor-card img{
+
+transition:.4s;
+
+}
+
+.mentor-card:hover img{
+
+box-shadow:
+0 0 25px rgba(0,229,255,.6);
+
+transform:scale(1.05);
+
+}
+
+/* WhatsApp Button */
+
+.whatsapp-float{
+
+animation:whatsappPulse 2s infinite;
+
+}
+
+@keyframes whatsappPulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
